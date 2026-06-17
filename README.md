@@ -23,4 +23,11 @@ This project demonstrates deployment of applications on AWS EKS using Kubernetes
 - Helm
 - ArgoCD
 - HPA
-- Ingress
+
+## Project Features
+
+- AWS EKS Cluster
+- Kubernetes Deployment
+- LoadBalancer Service
+- ConfigMap Integration
+- Secret Integration
