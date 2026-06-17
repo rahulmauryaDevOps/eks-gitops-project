@@ -1,5 +1,3 @@
-
-
 # AWS EKS GitOps Project using Helm and ArgoCD
 
 ## Project Overview
@@ -137,6 +135,19 @@ helm list -n nginx-project
 
 kubectl get pods -n argocd
 ```
+
+---
+
+## Screenshots
+
+- EKS Cluster
+- Nginx Application
+- PVC Bound Status
+- EBS CSI Driver Running
+- Helm Deployment
+- ArgoCD Healthy & Synced
+
+---
 
 ## Learning Outcomes
 
