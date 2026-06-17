@@ -1,19 +1,3 @@
-eks-gitops-project/
-│
-├── manifests/
-│   ├── namespace.yaml
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   ├── configmap.yaml
-│   ├── secret.yaml
-│   └── pvc.yaml
-│
-├── nginx-chart/
-│
-├── screenshots/
-│
-└── README.md
-
 # EKS GitOps Project
 
 This project demonstrates deployment of applications on AWS EKS using Kubernetes.
