@@ -1,5 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: nginx-deployment
   namespace: nginx-project
@@ -23,3 +24,28 @@ spec:
 
         ports:
         - containerPort: 80
+
+        env:
+        - name: ENV
+          valueFrom:
+            configMapKeyRef:
+              name: nginx-config
+              key: ENV
+
+        - name: APP_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: nginx-config
+              key: APP_NAME
+
+        - name: USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: nginx-secret
+              key: username
+
+        - name: PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: nginx-secret
+              key: password
